@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 // PAGES
 import HomePage from './pages/HomePage';
 import ContentPage from './pages/ContentPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             path="/galaxies"
             element={<ContentPage category="galaxies" />}
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
     </div>
