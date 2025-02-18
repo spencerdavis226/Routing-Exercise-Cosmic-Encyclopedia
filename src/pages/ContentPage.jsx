@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import NavigateBackButton from '../components/NavigateBackButton';
 
 export default function ContentPage({ category }) {
   const content = {
@@ -16,6 +17,7 @@ export default function ContentPage({ category }) {
     <div>
       <h2>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
       <p>{content[category] || 'No information available.'}</p>
+      <NavigateBackButton />
     </div>
   );
 }
