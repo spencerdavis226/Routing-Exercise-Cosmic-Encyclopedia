@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function ContentPage({ category }) {
   const content = {
     planets:
@@ -17,3 +19,8 @@ export default function ContentPage({ category }) {
     </div>
   );
 }
+
+// Prop Validation
+ContentPage.propTypes = {
+  category: PropTypes.string.isRequired,
+};
